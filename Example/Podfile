@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZZRefreshSwifty_Example' do
+  pod 'ZZRefreshSwifty', :path => '../'
+
+  target 'ZZRefreshSwifty_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

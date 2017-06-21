@@ -1,0 +1,6 @@
+framework module ZZRefreshSwifty {
+  umbrella header "ZZRefreshSwifty-umbrella.h"
+
+  export *
+  module * { export * }
+}

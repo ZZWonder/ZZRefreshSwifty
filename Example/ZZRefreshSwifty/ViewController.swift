@@ -7,13 +7,29 @@
 //
 
 import UIKit
+import ZZRefreshSwifty
+import SnapKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      let bb = UIButton()
+      bb.setTitle("跳转", for: .normal)
+      bb.backgroundColor = .red
+      view.addSubview(bb)
+      bb.snp.makeConstraints { (make) in
+        make.center.equalTo(view)
+      }
+      bb.addTarget(self, action: #selector(pushTotable), for: .touchUpInside)
+  }
+  
+  func pushTotable() {
+    let tab = ZZTableViewController()
+    self.present(tab, animated: true) { 
+      print("跳转成功")
     }
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

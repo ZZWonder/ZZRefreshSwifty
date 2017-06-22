@@ -26,5 +26,5 @@ A swift tool to refrsh, use cocoapods to install this pod, have fun!
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'SnapKit', '~> 3.2.0'
+  # s.dependency 'SnapKit', '~> 3.2.0'
 end
